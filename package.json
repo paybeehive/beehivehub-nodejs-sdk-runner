@@ -1,0 +1,36 @@
+{
+  "name": "beehivehub-sdk-runner",
+  "version": "1.0.0",
+  "description": "Interactive CLI runner for beehivehub-nodejs-sdk validation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prestart": "tsx src/check-env.ts",
+    "start": "tsx src/cli.ts",
+    "dev": "tsx watch src/cli.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "format": "biome format . --write",
+    "lint": "biome lint ."
+  },
+  "keywords": [
+    "beehive",
+    "beehivehub",
+    "sdk",
+    "runner",
+    "cli"
+  ],
+  "author": "Beehive Team",
+  "license": "MIT",
+  "dependencies": {
+    "@paybeehive/beehivehub-nodejs-sdk": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.5",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3"
+  }
+}

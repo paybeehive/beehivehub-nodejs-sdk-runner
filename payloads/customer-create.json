@@ -1,0 +1,19 @@
+{
+  "name": "Maria Santos",
+  "email": "maria.teste4@example.com",
+  "document": {
+    "type": "cpf",
+    "number": "98765432100"
+  },
+  "phone": "11988888888", 
+  "address": {
+    "street": "Rua Teste",
+    "streetNumber": "456",
+    "complement": "Apto 101",
+    "neighborhood": "Jardins",
+    "zipCode": "01234567",
+    "city": "São Paulo",
+    "state": "SP",
+    "country": "br"
+  }
+}
