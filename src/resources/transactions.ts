@@ -73,7 +73,7 @@ export async function transactionsMenu(beehive: any): Promise<boolean> {
           message: 'Transaction ID:',
         });
 
-        const idNum = id ? parseInt(id, 10) : NaN;
+        const idNum = id ? Number.parseInt(id, 10) : Number.NaN;
         if (!id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;
@@ -124,7 +124,7 @@ export async function transactionsMenu(beehive: any): Promise<boolean> {
           { type: 'number', name: 'amount', message: 'Amount (leave empty for full refund):' },
         ]);
 
-        const idNum = input.id ? parseInt(input.id, 10) : NaN;
+        const idNum = input.id ? Number.parseInt(input.id, 10) : Number.NaN;
         if (!input.id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;
@@ -153,7 +153,7 @@ export async function transactionsMenu(beehive: any): Promise<boolean> {
           message: 'Transaction ID:',
         });
 
-        const idNum = id ? parseInt(id, 10) : NaN;
+        const idNum = id ? Number.parseInt(id, 10) : Number.NaN;
         if (!id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;

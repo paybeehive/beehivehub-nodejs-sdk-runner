@@ -10,7 +10,8 @@
     "dev": "tsx watch src/cli.ts",
     "test": "node --import tsx --test test/*.test.ts",
     "format": "biome format . --write",
-    "lint": "biome lint ."
+    "lint": "biome lint .",
+    "build": "tsc --noEmit"
   },
   "keywords": [
     "beehive",
