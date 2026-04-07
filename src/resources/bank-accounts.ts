@@ -24,7 +24,7 @@ export async function bankAccountsMenu(beehive: any): Promise<boolean> {
           message: 'Recipient ID:',
         });
 
-        const recipientIdNum = recipientId ? parseInt(recipientId, 10) : NaN;
+        const recipientIdNum = recipientId ? Number.parseInt(recipientId, 10) : Number.NaN;
         if (!recipientId || Number.isNaN(recipientIdNum)) {
           printError('Valid numeric Recipient ID is required');
           break;
@@ -53,7 +53,7 @@ export async function bankAccountsMenu(beehive: any): Promise<boolean> {
           message: 'Recipient ID:',
         });
 
-        const recipientIdNum = recipientId ? parseInt(recipientId, 10) : NaN;
+        const recipientIdNum = recipientId ? Number.parseInt(recipientId, 10) : Number.NaN;
         if (!recipientId || Number.isNaN(recipientIdNum)) {
           printError('Valid numeric Recipient ID is required');
           break;

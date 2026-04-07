@@ -55,7 +55,7 @@ export async function customersMenu(beehive: any): Promise<boolean> {
           message: 'Customer ID:',
         });
 
-        const idNum = id ? parseInt(id, 10) : NaN;
+        const idNum = id ? Number.parseInt(id, 10) : Number.NaN;
         if (!id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;

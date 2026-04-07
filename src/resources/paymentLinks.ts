@@ -60,7 +60,7 @@ export async function paymentLinksMenu(beehive: any): Promise<boolean> {
           message: 'Payment Link ID:',
         });
 
-        const idNum = id ? parseInt(id, 10) : NaN;
+        const idNum = id ? Number.parseInt(id, 10) : Number.NaN;
         if (!id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;
@@ -115,7 +115,7 @@ export async function paymentLinksMenu(beehive: any): Promise<boolean> {
           message: 'Payment Link ID:',
         });
 
-        const idNum = id ? parseInt(id, 10) : NaN;
+        const idNum = id ? Number.parseInt(id, 10) : Number.NaN;
         if (!id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;
@@ -149,7 +149,7 @@ export async function paymentLinksMenu(beehive: any): Promise<boolean> {
           message: 'Payment Link ID:',
         });
 
-        const idNum = id ? parseInt(id, 10) : NaN;
+        const idNum = id ? Number.parseInt(id, 10) : Number.NaN;
         if (!id || Number.isNaN(idNum)) {
           printError('Valid numeric ID is required');
           break;

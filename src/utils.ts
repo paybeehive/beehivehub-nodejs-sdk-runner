@@ -60,7 +60,7 @@ export function saveOutput(operation: string, data: any, sdkInfo?: {
     
     return filename;
   } catch (error) {
-    console.error(`❌ Error saving output:`, error);
+    console.error('❌ Error saving output:', error);
     return '';
   }
 }
