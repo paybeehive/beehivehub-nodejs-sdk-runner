@@ -323,12 +323,12 @@ Se encontrar erros:
 1. **Verifique o payload JSON** - Sintaxe correta?
 2. **Confira as credenciais** - API key válida?
 3. **Veja a mensagem de erro** - API retorna detalhes
-4. **Consulte a documentação** - https://paybeehive.readme.io
+4. **Consulte a documentação** - https://docs.beehivehub.io
 
 ## 📞 Suporte
 
 - 📧 Email: support@paybeehive.com.br
-- 📚 Docs: https://paybeehive.readme.io
+- 📚 Docs: https://docs.beehivehub.io
 - 🐛 Issues: https://github.com/paybeehive/beehivehub-nodejs-sdk/issues
 - 📦 SDK: https://www.npmjs.com/package/@paybeehive/beehivehub-nodejs-sdk
 
